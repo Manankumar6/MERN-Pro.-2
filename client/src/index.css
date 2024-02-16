@@ -116,9 +116,8 @@ a.active {
         left: 0;
         bottom: 0;
         width: 50%;
-        height: 05.rem;
+        height: 0.5rem; /* Updated from 05.rem to 0.5rem */
         background-color: var(--btn-color);
-
     }
 }
 

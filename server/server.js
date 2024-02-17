@@ -25,6 +25,9 @@ app.use("/api/data",serviceRoute)
 app.use('/api/admin',adminRoute)
 
 app.use(errorMiddleware);
+app.get('/', (req,res)=>{
+    res.send("Hello World")
+})
 connectDb().then(()=>{
     app.listen(PORT,()=>{
         console.log(`App is listening on the port http://localhost:${PORT} `)
